@@ -1,5 +1,6 @@
 import WorkCard from "./ui_components/workCard";
 import Project from "../projects.json";
+import SkillCard from "./ui_components/skillCard";
 
 export default function Work() {
   return (
@@ -14,24 +15,15 @@ export default function Work() {
         Here are some of my recent frontend projects.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-10 gap-4">
-        <WorkCard
-          projectImage={Project[1].projectImage}
-          projectTitle={Project[1].projectTitle}
-          projectInfo={Project[1].projectInfo}
-          projectUrl={Project[1].projectUrl}
-        />
-        <WorkCard
-          projectImage={Project[2].projectImage}
-          projectTitle={Project[2].projectTitle}
-          projectInfo={Project[2].projectInfo}
-          projectUrl={Project[2].projectUrl}
-        />
-        <WorkCard
-          projectImage={Project[3].projectImage}
-          projectTitle={Project[3].projectTitle}
-          projectInfo={Project[3].projectInfo}
-          projectUrl={Project[3].projectUrl}
-        />
+        {Project.map((project, index) => (
+          <WorkCard
+            key={index}
+            projectImage={project.projectImage}
+            projectTitle={project.projectTitle}
+            projectInfo={project.projectInfo}
+            projectUrl={project.projectUrl}
+          />
+        ))}
       </div>
     </section>
   );

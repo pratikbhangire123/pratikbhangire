@@ -5,7 +5,7 @@ import useScrollToLocation from "../utils/useScrollToLocation";
 
 export default function Hero() {
   return (
-    <section className="p-8 md:px-16 xl:px-24 pt-4 md:pt-8 xl:pt-12 h-screen text-almostwhite bg-almostblack">
+    <section className="relative p-8 md:px-16 xl:px-24 pt-4 md:pt-8 xl:pt-12 h-screen text-almostwhite bg-almostblack">
       <Header />
       <div className="flex flex-col py-20 items-center">
         <h1 className="text-center text-3xl md:text-4xl xl:text-5xl font-black">
@@ -16,8 +16,8 @@ export default function Hero() {
           love it!
         </p>
       </div>
-      <div className="flex justify-center">
-        <div className="absolute -bottom-[5%] md:-bottom-[8%] xl:-bottom-[9%] w-20 md:w-28 xl:w-36 h-20 md:h-28 xl:h-36 rounded-full">
+      <div className="flex absolute inset-x-0 -bottom-[3%] md:-bottom-[4%] xl:-bottom-[5%] justify-center">
+        <div className="relative w-20 md:w-28 xl:w-36 h-20 md:h-28 xl:h-36 rounded-full">
           <Image
             src={PratikBhangire}
             alt="pratik bhangire photo"

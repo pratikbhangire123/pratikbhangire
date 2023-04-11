@@ -1,29 +1,24 @@
-{
+[
     
-    "1": {
+    {
         "projectImage": "/project_thumbs/sunnysideProject.png",
         "projectTitle": "Sunnyside",
         "projectInfo" : "This is the agency landing page built as a solution to the challenge by Frontend Mentor.",
         "projectUrl" : "https://sunnyside-mu-three.vercel.app"
     },
 
-    "2": {
+    {
         "projectImage" : "/project_thumbs/splitterProject.png",
         "projectTitle": "Splitter",
         "projectInfo" : "This is the bill splitter along with tip calcualtor web-app built as a solution to the challenge by Frontend Mentor.",
         "projectUrl": "https://splitter-eight.vercel.app"
     },
 
-    "3": {
+    {
         "projectImage" : "/project_thumbs/newsHomepageProject.png",
         "projectTitle" : "News Homepage",
         "projectInfo" : "This is the news website homepage built as a solution to the challenge by Frontend Mentor.",
         "projectUrl" : "https://news-homepage-eta-three.vercel.app"
-    },
-
-    "4": {
-        "projectInfo" : "This is a Multi-Dex Analytics Dashboard project built during the Gitcoin x Covalent 2022 Hackathon.",
-        "projectUrl" : "https://dex-board.vercel.app/"
     }
+]
 
-}

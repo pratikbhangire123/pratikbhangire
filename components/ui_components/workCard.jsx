@@ -23,7 +23,7 @@ export default function WorkCard(props) {
       </div>
       <Image
         src={props.projectImage}
-        alt="project"
+        alt={props.projectTitle}
         height={192}
         width={1920}
         className={`${isOpen ? "rounded-t-2xl" : "rounded-2xl"} md:rounded-2xl`}

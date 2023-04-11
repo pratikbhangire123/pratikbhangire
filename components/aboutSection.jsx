@@ -11,7 +11,7 @@ export default function About() {
       <h3 className="text-center text-base md:text-lg xl:text-xl font-bold">
         Pratik Bhangire
       </h3>
-      <p className="mt-10 mx-10 md:mx-20 xl:mx-40 text-center text-xs md:text-sm xl:text-base font-medium">
+      <p className="mt-10 mx-2 md:mx-20 xl:mx-40 text-center text-xs md:text-sm xl:text-base font-medium">
         Visuals have always been my passion & strength. Since my graduation
         days, I'm also very curious about the way human-computer interaction
         happens. I think this is the perfect recipe for me to be naturally
