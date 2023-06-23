@@ -8,7 +8,7 @@ export default function About() {
       id="about"
       className="px-8 md:px-16 xl:px-24 py-10 md:py-14 xl:py-20 text-almostblack bg-shadedwhite"
     >
-      <h3 className="text-center text-base md:text-lg xl:text-xl font-bold">
+      <h3 className="-mt-2 md:-mt-6 xl:-mt-10 text-center text-base md:text-lg xl:text-xl font-bold">
         Pratik Bhangire
       </h3>
       <p className="mt-10 mx-2 md:mx-20 xl:mx-40 text-center text-xs md:text-sm xl:text-base font-medium">
