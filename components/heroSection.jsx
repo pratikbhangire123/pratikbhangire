@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="flex flex-col relative px-8 md:px-16 xl:px-24 pt-4 md:pt-8 xl:pt-12 h-[90vh] md:h-screen text-almostwhite bg-almostblack">
       <Header />
-      <div className="flex flex-col h-full items-center justify-center">
+      <div className="flex flex-col mb-10 md:mb-20 h-full items-center justify-center">
         <h1 className="text-center text-3xl md:text-4xl xl:text-5xl font-black">
           Frontend Web Developer
         </h1>

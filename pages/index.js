@@ -21,7 +21,7 @@ export default function Home() {
         <link rel="icon" href="/logoLight.png" />
       </Head>
       <main
-        className={`${poppins.className} flex flex-col max-sm:landscape:hidden m-0`}
+        className={`${poppins.className} flex flex-col m-0`}
       >
         <Hero />
         <About />
@@ -29,13 +29,6 @@ export default function Home() {
         <Contact />
         <Footer />
       </main>
-      <section
-        className={`${poppins.className} flex items-center justify-center h-screen bg-almostblack`}
-      >
-        <h3 className={`text-xl font-medium text-almostwhite`}>
-          Please rotate your mobile to potrait mode!
-        </h3>
-      </section>
     </>
   );
 }
