@@ -20,13 +20,14 @@ export default function About() {
       <div className="grid grid-cols-1 md:grid-cols-2 mt-20 gap-4">
         <SkillCard
           src={FronendDeveloper}
-          skill="Frontend Web3 Developer"
+          skill="Frontend Web Developer"
           experience="Intermediate Level"
           languages="JavaScript, HTML, & CSS"
           techstack={
             <>
-              ReactJS <br /> NextJS <br /> TailwindCSS <br />
-              VSCode <br /> GitHub <br /> Vercel
+              React.js <br /> Next.js <br /> Tailwind CSS <br /> Redux <br />{" "}
+              Node.js <br /> Jest <br />
+              Git <br /> Vercel
             </>
           }
         />
