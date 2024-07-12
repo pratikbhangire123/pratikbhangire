@@ -1,26 +1,25 @@
 import Link from "next/link";
 import Image from "next/image";
-import Email from "../public/social_icons/email.svg";
-import Linkedin from "../public/social_icons/linkedin.svg";
-import Twitter from "../public/social_icons/twitter.svg";
-import Instagram from "../public/social_icons/instagram.svg";
+import { H2, SectionContainer } from "./index";
+import { Email, LinkedIn, Twitter } from "../public/index";
 
 export default function Contact() {
   return (
-    <section
+    <SectionContainer
       id="contact"
-      className="flex flex-col px-8 md:px-16 xl:px-24 py-10 md:py-14 xl:py-20 items-center text-almostwhite bg-almostblack"
+      bgColor="bg-colorPrimary"
+      className="flex flex-col items-center text-colorSecondary"
     >
-      <h2 className="text-center text-xl md:text-2xl xl:text-3xl font-bold">
+      <H2 className="text-center text-xl md:text-2xl xl:text-3xl font-bold">
         Intreseted in working together?
-      </h2>
+      </H2>
       <p className="mt-4 text-center text-sm md:text-base xl:text-lg">
         Shoot me an DM or Email, and let's discuss it.
       </p>
       <nav className="flex mt-10 md:mt-12 xl:mt-14 items-center text-center text-sm md:text-base xl:text-lg">
         <Link href="https://www.linkedin.com/in/pratik-bhangire/">
           <Image
-            src={Linkedin}
+            src={LinkedIn}
             alt="pratik-bhangire-linkedin"
             width={25}
             height={25}
@@ -36,15 +35,6 @@ export default function Contact() {
             className="mx-4 transition ease-in-out delay-150 duration-300 hover:-translate-y-1 hover:scale-105 active:translate-y-1 active:scale-75"
           />
         </Link>
-        <Link href="https://www.instagram.com/pratikbhangirework/">
-          <Image
-            src={Instagram}
-            alt="pratik-bhangire-instagram"
-            width={25}
-            height={25}
-            className="mx-4 transition ease-in-out delay-150 duration-300 hover:-translate-y-1 hover:scale-105 active:translate-y-1 active:scale-75"
-          />
-        </Link>
         <Link href="mailto:pratikbhangire@gmail.com">
           <Image
             src={Email}
@@ -55,6 +45,6 @@ export default function Contact() {
           />
         </Link>
       </nav>
-    </section>
+    </SectionContainer>
   );
 }

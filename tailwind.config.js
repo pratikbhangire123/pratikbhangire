@@ -8,18 +8,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        grayishblack: "#606060",
-        grayishwhite: "#D9D9D9",
-        lightgray: "#E5E5E5",
-        lightergray: "#F5F5F5",
-
         //primary
+        colorPrimary: "#111111",
+        colorPrimaryLight: "#606060",
 
-        almostblack: "#111111",
-        lightgray: "#999999",
-        almostwhite: "#eeeeee",
-        darkwhite: "#cccccc",
-        shadedwhite: "#dddddd",
+        //secondary
+        colorSecondary: "#eeeeee",
+        colorSecondaryLight: "#dddddd",
+        colorSecondaryLighter: "#cccccc",
+
+        //neutral
+        colorNeutral: "#999999",
+        colorNeutralLight: "#d9d9d9",
+        colorNeutralLighter: "#e5e5e5",
+        colorNeutralLightest: "#f5f5f5",
       },
     },
   },

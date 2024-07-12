@@ -1,10 +1,13 @@
 import Head from "next/head";
 import { Poppins } from "next/font/google";
-import Hero from "../components/heroSection";
-import About from "../components/aboutSection";
-import Work from "../components/workSection";
-import Contact from "../components/contactSection";
-import Footer from "../components/footerSection";
+import {
+  Hero,
+  About,
+  Projects,
+  Contact,
+  Footer,
+  WorkExperience,
+} from "../components/index";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -18,14 +21,14 @@ export default function Home() {
         <title>Pratik Bhangire</title>
         <meta name="description" content="Pratik's Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logoLight.png" />
+        <link rel="icon" href="/assets/logoLight.png" />
       </Head>
-      <main
-        className={`${poppins.className} flex flex-col m-0`}
-      >
+
+      <main className={`${poppins.className} flex flex-col m-0 text-colorPrimary`}>
         <Hero />
         <About />
-        <Work />
+        <WorkExperience />
+        <Projects />
         <Contact />
         <Footer />
       </main>

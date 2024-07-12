@@ -1,0 +1,43 @@
+[
+  {
+    "projectImage": "/assets/project_thumbs/bloggProject.png",
+    "projectTitle": "Blogg",
+    "projectInfo": "This is a blogging platform where you can share your stories with the world.",
+    "projectUrl": "https://blogg-five-tau.vercel.app"
+  },
+
+  {
+    "projectImage": "/assets/project_thumbs/spacexcoresProject.png",
+    "projectTitle": "SpaceXCores",
+    "projectInfo": "This is an informational platform to get information about various SpaceX cores by applying various filters.",
+    "projectUrl": "https://space-x-cores-nu96.vercel.app"
+  },
+
+  {
+    "projectImage": "/assets/project_thumbs/listingboardProject.png",
+    "projectTitle": "ListingsBoard",
+    "projectInfo": "This is a simple filterable job listing website made with plain JavaScript, HTML, and CSS.",
+    "projectUrl": "https://joblistings-sigma.vercel.app"
+  },
+
+  {
+    "projectImage": "/assets/project_thumbs/sunnysideProject.png",
+    "projectTitle": "Sunnyside",
+    "projectInfo": "This is the agency landing page built as a solution to the challenge by Frontend Mentor.",
+    "projectUrl": "https://sunnyside-mu-three.vercel.app"
+  },
+
+  {
+    "projectImage": "/assets/project_thumbs/splitterProject.png",
+    "projectTitle": "Splitter",
+    "projectInfo": "This is the bill splitter along with tip calcualtor web-app built as a solution to the challenge by Frontend Mentor.",
+    "projectUrl": "https://splitter-eight.vercel.app"
+  },
+
+  {
+    "projectImage": "/assets/project_thumbs/newsHomepageProject.png",
+    "projectTitle": "News Homepage",
+    "projectInfo": "This is the news website homepage built as a solution to the challenge by Frontend Mentor.",
+    "projectUrl": "https://news-homepage-eta-three.vercel.app"
+  }
+]

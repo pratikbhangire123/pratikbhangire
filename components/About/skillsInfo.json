@@ -1,0 +1,36 @@
+{
+  "languages": ["JavaScript", "HTML", "CSS"],
+
+  "libraries": [
+    "React.js",
+    "Redux",
+    "React Router",
+    "React Hook Form",
+    "Next.js",
+    "Tailwind CSS",
+    "Jest",
+    "Vitest",
+    "React Testing Library"
+  ],
+
+  "devtools": [
+    "Git",
+    "GitHub",
+    "Chrome DevTools",
+    "Lighthouse",
+    "Vercel",
+    "Vite",
+    "VSCode"
+  ],
+
+  "operations": [
+    "DOM Manipulation",
+    "Responsiveness",
+    "State Management",
+    "API Integration",
+    "Browser-based Debugging",
+    "Performance Optimization",
+    "Cross-Browser Compatibility",
+    "Accessibility"
+  ]
+}

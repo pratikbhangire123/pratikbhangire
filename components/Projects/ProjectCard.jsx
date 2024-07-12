@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-export default function WorkCard(props) {
+export default function ProjectCard(props) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -11,11 +11,11 @@ export default function WorkCard(props) {
       className="aspect-video relative w-full h-full"
     >
       <div
-        className={`flex absolute inset-0 items-center justify-center text-xl font-bold text-almostwhite md:hover:text-opacity-0 bg-almostblack bg-opacity-75 md:hover:bg-opacity-100 rounded-2xl`}
+        className={`flex absolute inset-0 items-center justify-center text-xl font-bold text-colorSecondary md:hover:text-opacity-0 bg-colorPrimary bg-opacity-75 md:hover:bg-opacity-100 rounded-2xl`}
       >
         {props.projectTitle}
         <div className="absolute inset-0 p-4 opacity-0 md:hover:opacity-100">
-          <TabAndDesktopWorkCard
+          <TabAndDesktopProjectCard
             projectInfo={props.projectInfo}
             projectUrl={props.projectUrl}
           />
@@ -30,7 +30,7 @@ export default function WorkCard(props) {
       />
 
       {isOpen && (
-        <MobileWorkCard
+        <MobileProjectCard
           projectInfo={props.projectInfo}
           projectUrl={props.projectUrl}
         />
@@ -39,14 +39,14 @@ export default function WorkCard(props) {
   );
 }
 
-function MobileWorkCard(props) {
+function MobileProjectCard(props) {
   return (
-    <div className="md:hidden flex flex-col w-full p-4 items-center bg-almostwhite drop-shadow-xl rounded-b-2xl ">
-      <p className="text-center text-xs font-light text-alomstblack">
+    <div className="md:hidden flex flex-col w-full p-4 items-center bg-colorSecondary drop-shadow-xl rounded-b-2xl ">
+      <p className="text-center text-xs font-light text-colorPrimary">
         {props.projectInfo}
       </p>
       <Link href={props.projectUrl}>
-        <p className="mt-4 p-2 text-xs text-almostwhite font-medium bg-almostblack rounded-lg transition ease-in-out delay-150 duration-300 active:translate-y-1 active:scale-75">
+        <p className="mt-4 p-2 text-xs text-colorSecondary font-medium bg-colorPrimary rounded-lg transition ease-in-out delay-150 duration-300 active:translate-y-1 active:scale-75">
           View Website
         </p>
       </Link>
@@ -54,15 +54,15 @@ function MobileWorkCard(props) {
   );
 }
 
-function TabAndDesktopWorkCard(props) {
+function TabAndDesktopProjectCard(props) {
   return (
     <div className="max-md:hidden flex flex-col w-full h-full p-4 items-center justify-center">
-      <p className="text-center text-xs font-normal text-almostwhite">
+      <p className="text-center text-xs font-normal text-colorSecondary">
         {props.projectInfo}
       </p>
       <Link href={props.projectUrl}>
-        <p className="mt-4 p-2 text-xs font-medium text-almostblack bg-almostwhite rounded-lg transition ease-in-out delay-150 duration-300 hover:-translate-y-1 hover:scale-105 active:translate-y-1 active:scale-75">
-          View Website
+        <p className="mt-4 p-2 text-xs font-medium text-colorPrimary bg-colorSecondary rounded-lg transition ease-in-out delay-150 duration-300 hover:-translate-y-1 hover:scale-105 active:translate-y-1 active:scale-75">
+          Open Website
         </p>
       </Link>
     </div>
