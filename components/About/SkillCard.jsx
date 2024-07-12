@@ -47,7 +47,7 @@ export default function SkillCard() {
 
       <button
         onClick={() => setIsExpanded(!isExpanded)}
-        className="block mt-8 -mb-11 mx-auto px-2 text-colorSecondary bg-colorPrimary border border-colorNeutral rounded-md"
+        className="block mt-8 -mb-11 md:-mb-12 mx-auto px-2 py-1 text-xs md:text-sm xl:text-base text-colorSecondary bg-colorPrimary border border-colorNeutral rounded-md"
       >
         {isExpanded ? "Collapse" : "Expand"}
       </button>
