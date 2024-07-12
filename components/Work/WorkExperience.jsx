@@ -1,6 +1,5 @@
-import { H2, SectionContainer } from "../index";
+import { H2, SectionContainer, WorkCard } from "../index";
 import ExperienceList from "./experiences.json";
-import { WorkCard } from "../index";
 
 export default function WorkExperience() {
   return (
