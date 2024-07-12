@@ -5,7 +5,6 @@ export default function SectionContainer({
   props,
   children,
 }) {
-  console.log(bgColor);
   return (
     <section
       id={id}

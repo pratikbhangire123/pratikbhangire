@@ -1,9 +1,11 @@
-import Header from "../Header";
-import { Profile } from "../index";
+import { Header, Profile } from "../index";
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative flex flex-col px-8 md:px-16 xl:px-24 pt-4 md:pt-8 xl:pt-12 h-screen text-colorSecondary bg-colorPrimary">
+    <section
+      id="hero"
+      className="relative flex flex-col px-8 md:px-16 xl:px-24 pt-4 md:pt-8 xl:pt-12 h-screen text-colorSecondary bg-colorPrimary"
+    >
       <Header />
 
       <div className="flex flex-col mb-10 md:mb-20 h-full items-center justify-center">
