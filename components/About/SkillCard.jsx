@@ -1,26 +1,19 @@
-import Image from "next/image";
 import { SkillCardElement } from "../index";
-import { FrontendThumb } from "../../public/index";
 import skillsInfo from "./skillsInfo.json";
 import { useState } from "react";
 
 export default function SkillCard() {
   const [isExpanded, setIsExpanded] = useState(false);
-
-  // w-16 md:w-20 xl:w-24 h-16 md:h-20 xl:h-24
+  
+  const handleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
 
   return (
-    <div className="relative p-8 text-left bg-colorNeutralLightest border drop-shadow-md rounded-md">
-      {/* <div className="block w-max -mt-[5.5rem] mx-auto ring-2 ring-colorPrimary bg-colorNeutralLightest rounded-full">
-        <Image
-          src={FrontendThumb}
-          width={70}
-          height={70}
-          alt="a guy with a laptop"
-          className="rounded-full object-cover"
-        />
-      </div> */}
-
+    <div
+      id="skills"
+      className="relative p-8 text-left bg-colorNeutralLightest border border-b-2 border-b-colorPrimary drop-shadow-md rounded-md"
+    >
       <SkillCardElement
         elementTitle="Languages"
         elements={skillsInfo.languages}
@@ -32,7 +25,7 @@ export default function SkillCard() {
       />
 
       {isExpanded && (
-        <>
+        <div>
           <SkillCardElement
             elementTitle="Other Developer Tools"
             elements={skillsInfo.devtools}
@@ -42,11 +35,11 @@ export default function SkillCard() {
             elementTitle="Frontend Operations"
             elements={skillsInfo.operations}
           />
-        </>
+        </div>
       )}
 
       <button
-        onClick={() => setIsExpanded(!isExpanded)}
+        onClick={handleExpand}
         className="block mt-8 -mb-11 md:-mb-12 mx-auto px-2 py-1 text-xs md:text-sm xl:text-base text-colorSecondary bg-colorPrimary border border-colorNeutral rounded-md"
       >
         {isExpanded ? "Collapse" : "Expand"}

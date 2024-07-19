@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .after-click {
+    background-color: #99999955;
+    border-radius: 9999px;
+  }
+}

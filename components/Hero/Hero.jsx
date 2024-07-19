@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex flex-col px-8 md:px-16 xl:px-24 pt-4 md:pt-8 xl:pt-12 h-screen text-colorSecondary bg-colorPrimary"
+      className="flex flex-col px-8 md:px-16 xl:px-24 pt-4 md:pt-8 xl:pt-12 h-[90vh] md:h-screen text-colorSecondary bg-colorPrimary"
     >
       <Header />
 

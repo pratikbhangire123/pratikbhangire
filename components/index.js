@@ -1,8 +1,12 @@
-import Header from "./Header";
+import Header from "./Header/Header";
+import OnScrollHeader from "./Header/OnScrollHeader";
+import NavMenu from "./Header/NavMenu";
+import SubHeader from "./Header/SubHeader";
 import Hero from "./Hero/Hero";
 import About from "./About/About";
 import Projects from "./Projects/Projects";
-import Contact from "./Contact";
+import Contact from "./Contact/Contact";
+import SocialLink from "./Contact/SocialLink";
 import Footer from "./Footer";
 import Profile from "./Hero/Profile";
 import SkillCard from "./About/SkillCard";
@@ -17,10 +21,14 @@ import SectionContainer from "./ui-elements/SectionContainer";
 
 export {
   Header,
+  OnScrollHeader,
+  NavMenu,
+  SubHeader,
   Hero,
   About,
   Projects,
   Contact,
+  SocialLink,
   Footer,
   Profile,
   SkillCard,

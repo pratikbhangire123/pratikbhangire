@@ -12,7 +12,7 @@ export default function Footer() {
       <Image src={DarkLogo} alt="Logo" width={30} height={30} />
       <p className="mt-4 text-center">Simplicity is my Philosophy.</p>
       <p className="mt-8 text-center text-xs">
-        Created by me &#169; twentytwentythree
+        Created by me &#169; twentytwentyfour
       </p>
     </SectionContainer>
   );
