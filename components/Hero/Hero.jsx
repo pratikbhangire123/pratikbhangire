@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <SectionContainer
       id="hero"
-      className="flex flex-col h-[82vh] md:h-[90%] justify-center text-colorSecondary"
+      className="flex flex-col h-[90vh] justify-center text-colorSecondary"
       bgColor="bg-colorPrimary"
     >
       <div className="flex flex-col items-center justify-center">
