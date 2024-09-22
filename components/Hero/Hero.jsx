@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="flex flex-col items-center justify-center">
         <Available />
 
-        <h1 className="mb-6 md:mb-7 xl:mb-8 text-left text-5xl md:text-6xl xl:text-8xl font-semibold text-colorSecondary tracking-tighter">
+        <h1 className="mb-6 md:mb-7 xl:mb-8 text-center text-5xl md:text-6xl xl:text-8xl font-semibold text-colorSecondary tracking-tighter">
           Pratik Bhangire
         </h1>
 
