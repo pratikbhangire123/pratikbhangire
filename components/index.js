@@ -1,43 +1,39 @@
-import Header from "./Header/Header";
-import OnScrollHeader from "./Header/OnScrollHeader";
-import NavMenu from "./Header/NavMenu";
-import SubHeader from "./Header/SubHeader";
+import Header from "./Navbar/Header";
+import NavMenu from "./Navbar/NavMenu";
 import Hero from "./Hero/Hero";
-import About from "./About/About";
-import Projects from "./Projects/Projects";
-import Contact from "./Contact/Contact";
-import SocialLink from "./Contact/SocialLink";
-import Footer from "./Footer";
 import Profile from "./Hero/Profile";
-import SkillCard from "./About/SkillCard";
-import SkillCardElement from "./About/SkillCardElement";
+import About from "./About/About";
+import TechStack from "./About/TechStack";
+import Career from "./About/Career";
+import Projects from "./Projects/Projects";
 import ProjectCard from "./Projects/ProjectCard";
+import Contact from "./Contact/Contact";
+import SocialHandles from "./SocialHandles";
+import Footer from "./Footer";
+import SectionContainer from "./ui-elements/SectionContainer";
+import Button from "./ui-elements/Button";
 import H2 from "./ui-elements/H2";
 import H3 from "./ui-elements/H3";
 import H4 from "./ui-elements/H4";
-import WorkExperience from "./Work/WorkExperience";
-import WorkCard from "./Work/WorkCard";
-import SectionContainer from "./ui-elements/SectionContainer";
+import Available from "./ui-elements/Available";
 
 export {
   Header,
-  OnScrollHeader,
   NavMenu,
-  SubHeader,
   Hero,
-  About,
-  Projects,
-  Contact,
-  SocialLink,
-  Footer,
   Profile,
-  SkillCard,
-  SkillCardElement,
+  About,
+  TechStack,
+  Career,
+  Projects,
   ProjectCard,
+  Contact,
+  SocialHandles,
+  Footer,
+  SectionContainer,
+  Button,
   H2,
   H3,
   H4,
-  WorkExperience,
-  WorkCard,
-  SectionContainer,
+  Available,
 };

@@ -1,12 +1,10 @@
 import "../styles/globals.css";
-import MenuState from "../utils/menuStateContext";
+import { AboutModalProvider } from "../contexts/aboutModalState";
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
-      <MenuState>
-        <Component {...pageProps} />
-      </MenuState>
-    </>
+    <AboutModalProvider>
+      <Component {...pageProps} />
+    </AboutModalProvider>
   );
 }

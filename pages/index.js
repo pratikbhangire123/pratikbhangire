@@ -1,13 +1,15 @@
 import Head from "next/head";
 import { Poppins } from "next/font/google";
 import {
+  Header,
   Hero,
   About,
   Projects,
   Contact,
   Footer,
-  WorkExperience,
 } from "../components/index";
+import { motion } from "framer-motion";
+import useFramerCursorFollower from "../hooks/useFramerCursorFollower";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -15,6 +17,8 @@ const poppins = Poppins({
 });
 
 export default function Home() {
+  const { mousePosition } = useFramerCursorFollower();
+
   return (
     <>
       <Head>
@@ -24,10 +28,22 @@ export default function Home() {
         <link rel="icon" href="/assets/logoLight.png" />
       </Head>
 
-      <main className={`${poppins.className} flex flex-col m-0 text-colorPrimary`}>
+      <motion.div
+        className="max-lg:hidden fixed -z-0 w-6 h-6 bg-colorNeutral rounded-full opacity-50"
+        animate={{
+          x: mousePosition.x > 0 ? mousePosition.x - 14 : 0,
+          y: mousePosition.y > 0 ? mousePosition.y - 14 : 0,
+        }}
+        transition={{ type: "spring", stiffness: 150, damping: 15 }}
+      ></motion.div>
+
+      <About />
+
+      <main
+        className={`${poppins.className} flex flex-col m-0 text-colorPrimary`}
+      >
+        <Header />
         <Hero />
-        <About />
-        <WorkExperience />
         <Projects />
         <Contact />
         <Footer />

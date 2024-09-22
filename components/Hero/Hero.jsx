@@ -1,25 +1,30 @@
-import { Header, Profile } from "../index";
+import { SectionContainer, Button, Available } from "../index";
 
 export default function Hero() {
   return (
-    <section
+    <SectionContainer
       id="hero"
-      className="flex flex-col px-8 md:px-16 xl:px-24 pt-4 md:pt-8 xl:pt-12 h-[90vh] md:h-screen text-colorSecondary bg-colorPrimary"
+      className="flex flex-col h-[82vh] md:h-[90%] justify-center text-colorSecondary"
+      bgColor="bg-colorPrimary"
     >
-      <Header />
+      <div className="flex flex-col items-center justify-center">
+        <Available />
 
-      <div className="flex flex-col mb-10 md:mb-20 h-full items-center justify-center">
-        <h1 className="text-center text-3xl md:text-4xl xl:text-5xl font-black">
-          Frontend Web Developer
+        <h1 className="mb-6 md:mb-7 xl:mb-8 text-left text-5xl md:text-6xl xl:text-8xl font-semibold text-colorSecondary tracking-tighter">
+          Pratik Bhangire
         </h1>
 
-        <p className="my-5 text-center md:text-lg xl:text-xl font-extralight">
-          I build complex web interfaces in the simplest way possible, and I
-          love it!
+        <p className="md:w-1/2 mb-12 md:mb-14 xl:mb-16 text-center text-base md:text-lg xl:text-xl font-extralight text-colorSecondaryLighter/90">
+          I design and build purposeful web interfaces that fuel business growth
+          and spark deep user engagement.
         </p>
+
+        <a href="#contact">
+          <Button vairant="primary">Get in Touch</Button>
+        </a>
       </div>
 
-      <Profile />
-    </section>
+      {/* <Profile /> */}
+    </SectionContainer>
   );
 }

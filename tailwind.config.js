@@ -8,22 +8,60 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        //primary
-        colorPrimary: "#111111",
-        colorPrimaryLight: "#606060",
+        // Primary
+        colorPrimary: "#1A1A1A",
+        colorPrimaryLight: "#4A4A4A",
 
-        //secondary
-        colorSecondary: "#eeeeee",
-        colorSecondaryLight: "#dddddd",
-        colorSecondaryLighter: "#cccccc",
+        // Secondary
+        colorSecondary: "#E0E0E0",
+        colorSecondaryLight: "#C7C7C7",
+        colorSecondaryLighter: "#B0B0B0",
 
-        //neutral
-        colorNeutral: "#999999",
-        colorNeutralLight: "#d9d9d9",
-        colorNeutralLighter: "#e5e5e5",
-        colorNeutralLightest: "#f5f5f5",
+        // Accent
+        colorAccent: "#ff5c00", //#2323ff
+
+        // Neutral
+        colorNeutral: "#787878",
+        colorNeutralLight: "#CBCBCB",
+        colorNeutralLighter: "#E2E2E2",
+        colorNeutralLightest: "#F7F7F7",
+      },
+
+      backgroundImage: {
+        vignette:
+          "radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 40%, rgba(26, 26, 26, 0.7) 100%)",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".scrollbar-thin": {
+          "&::-webkit-scrollbar": {
+            width: "4px",
+          },
+          "&::-webkit-scrollbar-track": {
+            background: "transparent",
+          },
+          "&::-webkit-scrollbar-thumb": {
+            background: "rgba(128, 128, 128, 0.3)",
+            borderRadius: "8px",
+          },
+          "&::-webkit-scrollbar-thumb:hover": {
+            background: "rgba(128, 128, 128, 0.5)",
+          },
+          "scrollbar-width": "thin",
+          "scrollbar-color": "rgba(128, 128, 128, 0.3) transparent",
+        },
+
+        ".scrollbar-hide": {
+          "-ms-overflow-style": "none",
+          "scrollbar-width": "none",
+        },
+        ".scrollbar-hide::-webkit-scrollbar": {
+          display: "none",
+        },
+      });
+    },
+  ],
 };
