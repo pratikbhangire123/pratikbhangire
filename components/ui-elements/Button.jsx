@@ -10,7 +10,7 @@ const Button = forwardRef(
     return (
       <motion.button
         ref={ref}
-        className={`inline-flex items-center justify-center px-3 md:px-4 xl:px-5 py-1 md:py-2 xl:py-3 text-sm md:text-base xl:text-lg rounded-full ${variantClasses[vairant]} ${className}`}
+        className={`inline-flex items-center justify-center px-3 md:px-4 xl:px-5 py-2 xl:py-3 text-sm md:text-base xl:text-lg rounded-full ${variantClasses[vairant]} ${className}`}
         {...props}
       >
         {children}

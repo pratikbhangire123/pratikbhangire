@@ -14,7 +14,7 @@ export default function Projects() {
 
       <motion.div
         ref={constraintsContainer}
-        className="relative my-14 overflow-hidden"
+        className="relative flex justify-center my-14 overflow-hidden"
       >
         <motion.ul
           drag="x"

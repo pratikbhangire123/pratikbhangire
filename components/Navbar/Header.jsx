@@ -38,7 +38,7 @@ export default function Header() {
     <>
       <header
         id="header"
-        className={`flex h-[10vh] px-4 md:px-6 xl:px-8 py-8 md:py-10 xl:py-12 items-center justify-center bg-colorPrimary text-colorSecondary`}
+        className={`flex h-[10vh] px-4 md:px-6 xl:px-8 landscape:sm:py-8 landscape:max-md:py-10 items-center justify-center bg-colorPrimary text-colorSecondary`}
       >
         <motion.div
           initial={{ width: "48px", height: "48px" }}
