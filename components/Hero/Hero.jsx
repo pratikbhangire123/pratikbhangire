@@ -20,7 +20,7 @@ export default function Hero() {
         </p>
 
         <a href="#contact">
-          <Button vairant="primary">Get in Touch</Button>
+          <Button variant="primary">Get in Touch</Button>
         </a>
       </div>
 

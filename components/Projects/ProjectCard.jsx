@@ -10,7 +10,7 @@ export default function ProjectCard({
   projectUrl,
 }) {
   return (
-    <motion.li className="flex flex-col w-[80vw] md:w-[45vw] xl:w-[30vw] bg-colorPrimaryLight/10 backdrop-blur-sm border border-colorSecondaryLighter/10 rounded-lg hover:cursor-grab active:cursor-grabbing">
+    <motion.li className="flex flex-col w-[80vw] md:w-[45vw] xl:w-[30vw] bg-colorPrimaryLight/10 backdrop-blur-md border border-colorSecondaryLighter/10 rounded-lg cursor-all-scroll">
       <div className="relative rounded-lg">
         <Image
           src={projectImage}
@@ -38,7 +38,7 @@ export default function ProjectCard({
           </Link>
         </div>
 
-        <p className="text-xs md:text-sm xl:text-base font-extralight text-colorSecondaryLighter/60">
+        <p className="text-xs md:text-sm xl:text-base font-extralight text-colorSecondaryLighter/70">
           {projectInfo}
         </p>
       </div>

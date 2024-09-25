@@ -14,7 +14,7 @@ export default function Contact() {
       </h2>
 
       <Link href="https://cal.com/pratikbhangire" target="_blank">
-        <Button vairant="primary" className="my-14">
+        <Button variant="primary" className="my-14">
           Schedule a Call
         </Button>
       </Link>

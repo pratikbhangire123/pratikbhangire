@@ -3,8 +3,10 @@ import NavMenu from "./Navbar/NavMenu";
 import Hero from "./Hero/Hero";
 import Profile from "./Hero/Profile";
 import About from "./About/About";
-import TechStack from "./About/TechStack";
-import Career from "./About/Career";
+import SpecialityCard from "./About/SpecialityCard";
+import MoreAbout from "./MoreAbout/MoreAbout";
+import TechStack from "./MoreAbout/TechStack";
+import Career from "./MoreAbout/Career";
 import Projects from "./Projects/Projects";
 import ProjectCard from "./Projects/ProjectCard";
 import Contact from "./Contact/Contact";
@@ -23,6 +25,8 @@ export {
   Hero,
   Profile,
   About,
+  SpecialityCard,
+  MoreAbout,
   TechStack,
   Career,
   Projects,

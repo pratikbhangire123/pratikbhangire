@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Poppins } from "next/font/google";
 import {
+  MoreAbout,
   Header,
   Hero,
   About,
@@ -37,13 +38,14 @@ export default function Home() {
         transition={{ type: "spring", stiffness: 150, damping: 15 }}
       ></motion.div> */}
 
-      <About />
+      <MoreAbout />
 
       <main
         className={`${poppins.className} flex flex-col m-0 text-colorPrimary`}
       >
         <Header />
         <Hero />
+        <About />
         <Projects />
         <Contact />
         <Footer />

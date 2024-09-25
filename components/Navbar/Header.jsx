@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavMenu } from "../index";
-import { CgMenuGridO } from "react-icons/cg";
+import { BsList } from "react-icons/bs";
 import { motion, useAnimation } from "framer-motion";
 
 export default function Header() {
@@ -48,14 +48,14 @@ export default function Header() {
           {!isMenuOpened && (
             <button
               onClick={toggleMenu}
-              className="p-1 text-lg md:text-xl xl:text-2xl"
+              className="text-lg md:text-xl xl:text-2xl"
             >
               <motion.span
                 initial={{ opacity: 1 }}
                 animate={{ opacity: isMenuOpened ? 0 : 1 }}
                 transition={{ duration: 0.2 }}
               >
-                <CgMenuGridO />
+                <BsList />
               </motion.span>
             </button>
           )}
