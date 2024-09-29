@@ -7,6 +7,20 @@ import ProfilePic from "../../public/assets/PratikBhangire.jpg";
 
 export default function MoreAbout() {
   const { isAboutModalOpen, closeModal } = useAboutModal();
+  const demographics = [
+    {
+      icon: <BsGeoAlt />,
+      title: "Pune, Maharashtra, India",
+    },
+    {
+      icon: <BsClock />,
+      title: "GMT + 5:30",
+    },
+    {
+      icon: <BsChatSquareQuote />,
+      title: "English, Hindi, & Marathi",
+    },
+  ];
 
   return (
     <AnimatePresence>
@@ -33,8 +47,8 @@ export default function MoreAbout() {
               <BsX />
             </button>
 
-            <div className="flex flex-col w-2/3 self-center">
-              <h2 className="text-6xl md:text-8xl font-bold tracking-tighter text-colorPrimary">
+            <div className="flex flex-col lg:w-2/3 self-center items-center">
+              <h2 className="text-6xl md:text-7xl xl:text-8xl font-bold tracking-tighter text-colorPrimary">
                 About.
               </h2>
 
@@ -49,29 +63,18 @@ export default function MoreAbout() {
                   />
 
                   <div className="flex flex-col gap-2">
-                    <h3 className="mt-0 text-2xl font-bold text-colorPrimary/90">
+                    <h3 className="mt-0 text-lg md:text-xl xl:text-2xl font-bold text-colorPrimary/90">
                       Pratik Bhangire
                     </h3>
 
-                    <div className="flex items-center gap-2 text-colorPrimaryLight">
-                      <span>
-                        <BsGeoAlt />
-                      </span>
-
-                      <p>Pune, Maharashtra, India.</p>
-
-                      <span className="ml-4">
-                        <BsClock />
-                      </span>
-
-                      <p>GMT+5:30</p>
-
-                      <span className="ml-4">
-                        <BsChatSquareQuote />
-                      </span>
-
-                      <p>English, Hindi, & Marathi.</p>
-                    </div>
+                    <ul className="flex flex-col md:flex-row gap-2 md:gap-8 text-xs md:text-sm xl:text-base text-colorPrimaryLight">
+                      {demographics.map((demographic) => (
+                        <li className="flex gap-2 items-center">
+                          {demographic.icon}
+                          <p>{demographic.title}</p>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
 

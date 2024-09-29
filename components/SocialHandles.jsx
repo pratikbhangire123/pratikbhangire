@@ -38,7 +38,7 @@ export default function SocialHandles({ variant = "dark", className }) {
   return (
     <nav
       id="connect"
-      className={`mt-8 flex flex-wrap gap-x-4 md:gap-x-6 text-sm md:text-base xl:text-lg ${className}`}
+      className={`mt-8 flex flex-wrap gap-4 md:gap-6 text-sm md:text-base xl:text-lg ${className}`}
     >
       {socialIcons.map((icon) => (
         <Link
