@@ -23,11 +23,7 @@ export default function Contact() {
         Find me elsewhere on web
       </p>
 
-      <SocialHandles
-        textColor="text-colorSecondaryLighter"
-        borderColor="border-colorSecondaryLighter"
-        className="justify-center"
-      />
+      <SocialHandles variant="light" className="justify-center" />
     </SectionContainer>
   );
 }

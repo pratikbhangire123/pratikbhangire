@@ -18,7 +18,7 @@ module.exports = {
         colorSecondaryLighter: "#B0B0B0",
 
         // Accent
-        colorAccent: "#ff5c00", //#2323ff
+        colorAccent: "#ff5c00", //#ff5c00 or #2323ff
 
         // Neutral
         colorNeutral: "#787878",

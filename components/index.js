@@ -18,6 +18,7 @@ import H2 from "./ui-elements/H2";
 import H3 from "./ui-elements/H3";
 import H4 from "./ui-elements/H4";
 import Available from "./ui-elements/Available";
+import Divider from "./ui-elements/Divider";
 
 export {
   Header,
@@ -40,4 +41,5 @@ export {
   H3,
   H4,
   Available,
+  Divider,
 };

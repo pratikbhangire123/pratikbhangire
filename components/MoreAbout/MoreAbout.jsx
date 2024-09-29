@@ -1,7 +1,9 @@
-import { H3, Career, TechStack, SocialHandles } from "../index";
+import { H3, Career, TechStack, SocialHandles, Divider } from "../index";
 import { useAboutModal } from "../../contexts/aboutModalState";
 import { AnimatePresence, motion } from "framer-motion";
-import { BsX } from "react-icons/bs";
+import { BsChatSquareQuote, BsClock, BsGeoAlt, BsX } from "react-icons/bs";
+import Image from "next/image";
+import ProfilePic from "../../public/assets/PratikBhangire.jpg";
 
 export default function MoreAbout() {
   const { isAboutModalOpen, closeModal } = useAboutModal();
@@ -31,40 +33,77 @@ export default function MoreAbout() {
               <BsX />
             </button>
 
-            <div className="flex max-md:flex-col">
-              <div className="relative md:w-1/2 ">
-                <h2 className="sticky top-0 text-6xl md:text-8xl font-bold tracking-tighter text-colorPrimary">
-                  About.
-                </h2>
-              </div>
+            <div className="flex flex-col w-2/3 self-center">
+              <h2 className="text-6xl md:text-8xl font-bold tracking-tighter text-colorPrimary">
+                About.
+              </h2>
 
-              <div className="md:w-1/2 mt-8 md:mt-6 space-y-8">
+              <div className="mt-8 md:mt-16 space-y-8">
+                <div className="flex items-center gap-4">
+                  <Image
+                    src={ProfilePic}
+                    alt="Pratik's profile picture"
+                    width={70}
+                    height={70}
+                    className="ring-1 ring-colorPrimaryLight/20 rounded-full"
+                  />
+
+                  <div className="flex flex-col gap-2">
+                    <h3 className="mt-0 text-2xl font-bold text-colorPrimary/90">
+                      Pratik Bhangire
+                    </h3>
+
+                    <div className="flex items-center gap-2 text-colorPrimaryLight">
+                      <span>
+                        <BsGeoAlt />
+                      </span>
+
+                      <p>Pune, Maharashtra, India.</p>
+
+                      <span className="ml-4">
+                        <BsClock />
+                      </span>
+
+                      <p>GMT+5:30</p>
+
+                      <span className="ml-4">
+                        <BsChatSquareQuote />
+                      </span>
+
+                      <p>English, Hindi, & Marathi.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <Divider />
+
                 <p className="text-lg md:text-xl leading-9 md:leading-9 text-colorPrimary/90">
-                  I&apos;m experienced Front-End Developer based
-                  in the vibrant city of Pune, MH, India.
-                  <br />
-                  <br />I blend <strong>design and code </strong> to craft
-                  websites that not only good looking but also drive meaningful
-                  <strong>business results</strong>.
-                  <br />
+                  I blend
+                  <span className="font-semibold italic">
+                    &nbsp;design and code&nbsp;
+                  </span>
+                  to craft websites that not only good looking but also drive
+                  meaningful
+                  <span className="font-semibold italic">
+                    &nbsp;business results
+                  </span>
+                  .
                   <br />
                   To me, web interfaces are more than just visuals; they&apos;re
                   a journey, an experience. My work is where
-                  <strong>creativity meets strategy</strong>, shaping user
-                  interactions that leave a lasting impact.
+                  <span className="font-semibold italic">
+                    &nbsp;creativity meets strategy
+                  </span>
+                  , shaping user interactions that leave a lasting impact.
                 </p>
 
                 <Career />
 
                 <TechStack />
 
-                <H3>Connect with Me</H3>
+                <H3>Socials</H3>
 
-                <SocialHandles
-                  textColor="text-colorPrimaryLight"
-                  borderColor="border-colorPrimaryLight"
-                  className="ml-2"
-                />
+                <SocialHandles variant="dark" className="ml-2" />
               </div>
             </div>
           </motion.div>

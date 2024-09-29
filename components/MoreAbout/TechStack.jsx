@@ -18,15 +18,15 @@ export default function SkillCard() {
 
   return (
     <div id="techstack">
-      <H3>My Stack</H3>
+      <H3>Tech</H3>
 
-      <div className="flex flex-wrap mt-8 ml-2 gap-x-4 md:gap-x-6 text-sm md:text-base xl:text-lg text-colorPrimaryLight">
+      <ul className="flex flex-wrap mt-8 ml-2 gap-x-4 md:gap-x-6 text-sm md:text-base xl:text-lg text-colorPrimary/80">
         {icons.map((icon) => (
-          <span className="py-1">
+          <li className="px-3 py-1 bg-colorSecondaryLight/20 ring-1 ring-colorPrimary/10 rounded-full">
             {icon.name}
-          </span>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 }
