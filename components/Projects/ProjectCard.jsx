@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import { motion } from "framer-motion";
+import { CardTitle, CardParagraph } from "../index";
 
 export default function ProjectCard({
   projectImage,
@@ -25,9 +26,7 @@ export default function ProjectCard({
 
       <div className="p-4 space-y-4">
         <div className="flex w-full items-center justify-between">
-          <p className="text-center text-lg md:text-xl xl:text-2xl text-colorSecondaryLight">
-            {projectTitle}
-          </p>
+          <CardTitle>{projectTitle}</CardTitle>
 
           <Link
             href={projectUrl}
@@ -38,9 +37,7 @@ export default function ProjectCard({
           </Link>
         </div>
 
-        <p className="text-xs md:text-sm xl:text-base font-extralight text-colorSecondaryLighter/70">
-          {projectInfo}
-        </p>
+        <CardParagraph>{projectInfo}</CardParagraph>
       </div>
     </motion.li>
   );

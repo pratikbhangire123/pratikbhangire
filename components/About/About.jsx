@@ -1,10 +1,11 @@
-import { Button, SectionContainer, SpecialityCard } from "../index";
+import { H2, Button, SectionContainer, SpecialityCard } from "../index";
 import {
   BsFillFunnelFill,
   BsFillRocketFill,
   BsFileRichtextFill,
 } from "react-icons/bs";
 import { useAboutModal } from "../../contexts/aboutModalState";
+import { motion, transform } from "framer-motion";
 
 export default function About() {
   const { openModal } = useAboutModal();
@@ -31,12 +32,23 @@ export default function About() {
 
   return (
     <SectionContainer id="about" bgColor="bg-colorPrimary">
-      <p className="text-center text-xl md:text-2xl xl:text-3xl text-colorSecondary">
-        Crafting beautiful UIs for 3 years, with a focus on
-      </p>
+      <motion.span
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 2 }}
+        viewport={{ once: true }}
+      >
+        <H2>Crafting beautiful UIs for 3 years, with a focus on</H2>
+      </motion.span>
 
       <div className="flex flex-col my-14 space-y-14 items-center">
-        <ul className="flex flex-col md:flex-row flex-wrap w-full justify-center gap-10">
+        <motion.ul
+          initial={{ opacity: 0, transform: "translateY(32px)" }}
+          whileInView={{ opacity: 1, transform: "translateY(0)" }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="flex flex-col md:flex-row flex-wrap w-full justify-center gap-10"
+        >
           {specialities.map((speciality) => (
             <SpecialityCard
               icon={speciality.icon}
@@ -44,11 +56,18 @@ export default function About() {
               description={speciality.description}
             />
           ))}
-        </ul>
+        </motion.ul>
 
-        <Button variant="secondary" onClick={openModal}>
-          More About
-        </Button>
+        <motion.span
+          initial={{ opacity: 0, transform: "translateY(32px)" }}
+          whileInView={{ opacity: 1, transform: "translateY(0)" }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          <Button variant="secondary" onClick={openModal}>
+            More About
+          </Button>
+        </motion.span>
       </div>
     </SectionContainer>
   );

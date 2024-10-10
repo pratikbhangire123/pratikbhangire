@@ -41,7 +41,7 @@ export default function Home() {
       <MoreAbout />
 
       <main
-        className={`${poppins.className} flex flex-col m-0 text-colorPrimary`}
+        className={`${poppins.className} flex flex-col m-0 text-colorPrimary bg-colorPrimary/95`}
       >
         <Header />
         <Hero />

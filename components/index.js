@@ -17,6 +17,8 @@ import Button from "./ui-elements/Button";
 import H2 from "./ui-elements/H2";
 import H3 from "./ui-elements/H3";
 import H4 from "./ui-elements/H4";
+import CardTitle from "./ui-elements/CardTitle";
+import CardParagraph from "./ui-elements/CardParagraph";
 import Available from "./ui-elements/Available";
 import Divider from "./ui-elements/Divider";
 
@@ -40,6 +42,8 @@ export {
   H2,
   H3,
   H4,
+  CardTitle,
+  CardParagraph,
   Available,
   Divider,
 };
