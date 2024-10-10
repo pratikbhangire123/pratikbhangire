@@ -18,23 +18,9 @@ export default function Hero() {
           <Available />
         </motion.span>
 
-        <motion.div
-          initial={{ width: 0 }}
-          animate={{ width: "100%" }}
-          transition={{ duration: 2, ease: "easeInOut", delay: 3 }}
-          className="inline-block overflow-hidden"
-        >
-          <motion.h1
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 2, delay: 0.5 }}
-            className="mb-6 md:mb-7 xl:mb-8 text-center text-5xl md:text-6xl xl:text-8xl font-semibold text-colorSecondary tracking-tighter whitespace-nowrap"
-          >
-            Pratik Bhangire
-          </motion.h1>
-        </motion.div>
+        <TitleReveal text="Pratik Bhangire" />
 
-        <TextReveal
+        <DescriptionReveal
           text="I design and build purposeful web interfaces that fuel business growth
           and spark deep user engagement."
         />
@@ -54,7 +40,34 @@ export default function Hero() {
   );
 }
 
-const TextReveal = ({ text }) => {
+const TitleReveal = ({ text }) => {
+  const charVariants = {
+    hidden: { opacity: 0 },
+    reveal: { opacity: 1 },
+  };
+  const textChars = text.split("");
+
+  return (
+    <motion.h1
+      initial="hidden"
+      animate="reveal"
+      transition={{ staggerChildren: 0.04 }}
+      className="mb-6 md:mb-7 xl:mb-8 text-center text-5xl md:text-6xl xl:text-8xl font-semibold text-colorSecondary tracking-tighter"
+    >
+      {textChars.map((char) => (
+        <motion.span
+          key={char}
+          transition={{ duration: 3, delay: 4 }}
+          variants={charVariants}
+        >
+          {char}
+        </motion.span>
+      ))}
+    </motion.h1>
+  );
+};
+
+const DescriptionReveal = ({ text }) => {
   const charVariants = {
     hidden: { opacity: 0 },
     reveal: { opacity: 1 },
