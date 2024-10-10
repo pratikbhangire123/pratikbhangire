@@ -18,9 +18,16 @@ export default function Hero() {
           <Available />
         </motion.span>
 
-        <TitleReveal text="Pratik Bhangire" />
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 4, delay: 3.7 }}
+          className="mb-6 md:mb-7 xl:mb-8 text-center text-5xl md:text-6xl xl:text-8xl font-semibold text-colorSecondary tracking-tighter"
+        >
+          Pratik Bhangire
+        </motion.h1>
 
-        <DescriptionReveal
+        <TextReveal
           text="I design and build purposeful web interfaces that fuel business growth
           and spark deep user engagement."
         />
@@ -40,36 +47,9 @@ export default function Hero() {
   );
 }
 
-const TitleReveal = ({ text }) => {
+const TextReveal = ({ text }) => {
   const charVariants = {
-    hidden: { opacity: 0 },
-    reveal: { opacity: 1 },
-  };
-  const textChars = text.split("");
-
-  return (
-    <motion.h1
-      initial="hidden"
-      animate="reveal"
-      transition={{ staggerChildren: 0.04 }}
-      className="mb-6 md:mb-7 xl:mb-8 text-center text-5xl md:text-6xl xl:text-8xl font-semibold text-colorSecondary tracking-tighter"
-    >
-      {textChars.map((char) => (
-        <motion.span
-          key={char}
-          transition={{ duration: 3, delay: 4 }}
-          variants={charVariants}
-        >
-          {char}
-        </motion.span>
-      ))}
-    </motion.h1>
-  );
-};
-
-const DescriptionReveal = ({ text }) => {
-  const charVariants = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 0.3 },
     reveal: { opacity: 1 },
   };
   const textChars = text.split("");
